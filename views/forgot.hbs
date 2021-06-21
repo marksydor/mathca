@@ -1,0 +1,15 @@
+{{#if error.length}}
+	<div class="error">{{error}}</div>
+{{/if}}
+<h1 align="center" style="margin-top: 5%; color: #6D6D6C;">Enter your login and mail <br>to recover your password</h1>
+<form method="post" class="cform" action="/forgot">
+	<label for="userName">User name</label>
+	<input type="text" name="userName" id="userName" placeholder="your unique login">
+	<label for="mail">Mail</label>
+	<input type="text" name="mail" id="mail" placeholder="to send mail for you">
+	<input type="submit" name="Send">
+	<div class="href">
+		<a href="/" style="float: left;">Sign in Account</a>
+		<a href="/create" style="float: right;">Create Account</a>
+	</div>
+</form> 

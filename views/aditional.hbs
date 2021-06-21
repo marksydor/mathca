@@ -1,0 +1,38 @@
+<div class="info_form">
+	<form action="/aditional" method="post" enctype="multipart/form-data" >
+		<div class="gender">
+			<h2>Choose your gender</h2>
+			<p><input type="radio" name="gender" value="male">male</p>
+			<p><input type="radio" name="gender" value="female">female</p>
+			<p><input type="radio" name="gender" value="anouther">anouther</p>
+			<p><input type="radio" name="gender" value="bad kitten" checked="checked">bad kitten</p>
+		</div>
+		<div class="pereferens">
+			<h2>Choose your sexual preferences</h2>
+			<p><input type="radio" name="sexPer" value="male">male</p>
+			<p><input type="radio" name="sexPer" value="female">female</p>
+			<p><input type="radio" name="sexPer" value="bisexual">bisexual</p>
+			<p><input type="radio" name="sexPer" value="bad kitten" checked="checked">bad kitten</p>
+		</div>
+		
+		<div class="age">
+			<h2><nobr>Choose how old are you</nobr></h2>
+			<input type="range" class="slinder" name="age" min="18" max="99" step="1" value="33"  id="ageRange">
+			<p id='demo'>50</p>
+		</div>
+		<script type="text/javascript">
+			var slider = document.getElementById("ageRange");
+			var output = document.getElementById("demo");
+			output.innerHTML = slider.value;
+			slider.oninput = function() {
+			output.innerHTML = this.value;
+			}
+		</script>
+		<div class="biography">
+			<h2><nobr>You can Enter your biography</nobr></h2>
+			<textarea name='biography'>biography is out..</textarea>
+			<p>You can load 5 photos in your account</p>
+		</div>
+		<div class="send"><input type="submit" value="send"></div>
+	</form>
+</div>

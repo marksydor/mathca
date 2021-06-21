@@ -1,0 +1,29 @@
+{{!-- {{#if users.length}}
+<ul>
+	{{#each users}}
+	<li>
+		<span>{{firstName}}</span>
+		<span>{{lastName}}</span>
+    <span>{{mail}}</span>
+    <span>{{password}}</span>
+	</li>	
+	{{/each}}
+</ul>
+{{else}}
+<p> No users</p>
+{{/if}} --}}
+{{#if error.length}}
+	<div class="error">{{error}}</div>
+{{/if}}
+<h1 align="center" style="margin-top: 5%; color: #6D6D6C;">Login</h1>
+<form method="post" class="cform" action="/">
+	<label for="userName">User Name</label>
+	<input type="text" name="userName" id="userName" placeholder="user name">
+	<label for="password">Password</label>
+	<input type="password" name="password" id="password" placeholder="password">
+	<input type="submit" name="Send">
+	<div class="href">
+		<a href="/create" style="float: left;">Create Account</a>
+		<a href="/forgot" style="float: right;">Forgot Password</a>
+	</div>
+</form> 
